@@ -1,0 +1,258 @@
+body{
+    background-image: url("images/Untitled.png");
+    background-size: 600px;
+    background-repeat: repeat;
+    font-family: "Quicksand-regular",Arial,sans-serif;
+}
+
+a{
+    font-family: "Quicksand-bold",Arial,sans-serif;
+    text-decoration: none;
+    color: #e366ff;
+}
+a:hover{
+    text-decoration: none;
+    color: #f1b1ff;
+}
+
+header{
+    top: 0;
+    left: 0;
+    right: 0;
+    position: fixed;
+    background-image: linear-gradient(to bottom,rgba(255,255,255,1.0),rgba(255,255,255,0.5),rgba(255,255,255,0.0));
+}
+header ul{
+    align-items: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+header ul li{
+    display: inline-flex;
+    margin: 20px 30px;
+    font-family: "Quicksand-bold",Arial,sans-serif;
+    font-size: 24px;
+}
+header ul li a{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: black;
+    width: 200px;
+    height: 60px;
+    background: linear-gradient(to right,#E0F0FF,#F8D9FF,#FFD0E0) padding-box,
+                linear-gradient(to right,#E0F0FF,#F8D9FF,#FFD0E0) border-box;
+    border-radius: 35px;
+    border: 5px solid transparent;
+}
+header ul li a:hover{
+    color: black;
+    background: linear-gradient(to right,#e9f4ff,#fae8fd,#ffe2ec) padding-box,
+                linear-gradient(to right,#E0F0FF,#F8D9FF,#FFD0E0) border-box;
+}
+header ul li a:active{
+    background: linear-gradient(to right,#F1F8FF,#FDF3FF,#FFEEF4) padding-box,
+                linear-gradient(to right,#E0F0FF,#F8D9FF,#FFD0E0) border-box;
+}
+
+.ButtonMenu{
+    margin-right: 50px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    align-self: left;
+    text-decoration: none;
+    color: #b0b0b0;
+    background: linear-gradient(to right, #E0F0FF,#F8D9FF,#FFD0E0);
+    border-radius: 40px;
+    width: 90px;
+    height: 90px;
+    border: 5px solid #EBEBEB;
+}
+.ButtonMenu:active{
+    background: linear-gradient(to right, #deecfa,#fae4ff,#ffdfea);
+}
+.ButtonMenu:hover{
+    color: #8f8f8f;
+}
+
+h1,h2,h3,h4{
+    font-family: "Baloo",Arial,sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+h1{
+    font-size: 6em;
+}
+h2{
+    font-size: 40px;
+}
+h3{
+    font-size: 26px;
+}
+h4{
+    font-family: "Quicksand-bold",Arial,sans-serif;
+    font-size: 20px;
+    text-align: left;
+}
+
+section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    margin: 25% 0;
+}
+section#accueil{
+    margin-top: 20%;
+}
+section#accueil h3{
+    padding: 20px;
+    border-radius: 10px;
+    border-bottom: 10px solid transparent;
+    background: linear-gradient(to right,#fff,#fff,#fff) padding-box,
+                linear-gradient(to right,#E0F0FF,#F8D9FF,#FFD0E0) border-box;
+}
+
+section#profil{
+    display: flex;
+    flex-direction: row;
+}
+section#profil div{
+    flex-direction: column;
+}
+section#profil figure{
+    width: 250px;
+    background: linear-gradient(to right,#E0F0FF,#F8D9FF,#FFD0E0) border-box;
+    border: 10px solid transparent;
+    border-radius: 20px;
+}
+section#profil img{
+    width: 100%;
+    border-radius: 10px;
+}
+section#profil article{
+    background-color: #E0F0FF;
+    border-radius: 20px;
+    padding: 20px;
+    margin: 10px;
+    box-shadow: #FAFAFA 10px 10px;
+}
+section#profil > article{
+    width: 450px;
+}
+section#profil article p{
+    text-align: justify;
+    margin: 10px;
+    padding: 10px;
+    font-size: 22px;
+}
+section#profil ul{
+    font-family: "Quicksand-bold",Arial,sans-serif;
+    padding: 0;
+    list-style: none;
+}
+section#profil li img{
+    width: 25px;
+    margin: 5px;
+}
+
+section#compKey div{
+    display: flex;
+    flex-direction: row;
+}
+section#compKey div div{
+    flex-direction: column;
+}
+section#compKey div article{
+    background-color: #F8D9FF;
+    border-radius: 20px;
+    padding: 20px;
+    margin: 10px;
+    box-shadow: #FAFAFA 10px 10px;
+    text-align: justify;
+}
+section#compKey div div article{
+    background-color: #FFD0E0;
+    border-radius: 20px;
+    padding: 20px;
+    margin: 10px;
+    box-shadow: #FAFAFA 10px 10px;
+    text-align: justify;
+}
+
+form{
+    background-color: #E0F0FF;
+    border-radius: 20px;
+    padding: 20px;
+    margin: 10px;
+    box-shadow: #FAFAFA 10px 10px;
+    text-align: justify;
+}
+form input[type="submit"]{
+    text-align: center;
+    color: #8f8f8f;
+    background: linear-gradient(to right, #E0F0FF,#F8D9FF,#FFD0E0);
+    border-radius: 10px;
+    width: 200px;
+    height: 40px;
+    border: 5px solid #FFFFFF;
+    font-family: "Baloo",Arial,sans-serif;
+}
+form input[type="text"]{
+    width: 500px;
+    margin: 0;
+}
+
+footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    background: linear-gradient(to right,#E0F0FF,#F8D9FF,#FFD0E0) padding-box,
+                linear-gradient(to right,#B9DDFF,#ED9DFF,#FFA2C1) border-box;
+    border-top: 5px solid transparent;
+    border-bottom: 5px solid transparent;
+}
+footer article{
+    margin: 20px;
+}
+footer ul{
+    list-style: none;
+}
+footer article:last-child ul{
+    display: inline-flex;
+}
+footer a{
+    text-decoration: none;
+    color: black;
+}
+
+
+@font-face {
+    font-family: "Quicksand-regular";
+    src: url("polices/quicksand/quicksand-regular-webfont.woff2"),
+        url("polices/quicksand/quicksand-regular-webfont.woff");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Quicksand-bold";
+    src: url("polices/quicksand/quicksand-bold-webfont.woff2"),
+        url("polices/quicksand/quicksand-bold-webfont.woff");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Baloo";
+    src: url("polices/baloo/baloo-regular-webfont.woff2"),
+        url("polices/baloo/baloo-regular-webfont.woff");
+    font-weight: normal;
+    font-style: normal;
+}

@@ -1,0 +1,171 @@
+<!Doctype html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr" lang="fr">
+    <!-- Caractéristiques de la page -->
+    <head>
+        <meta charset="utf-8">
+	    	<meta name="description" content="Portfolio de Matthias Francez, profil et contact">
+	    	<meta name="keywords" content="Francez,Matthias,Portfolio,accueil,profil,contact">
+			<link rel="stylesheet" types="text/css" href="style.css">
+			<title>Accueil</title>
+    </head>
+    
+    <!-- Corps de la page -->
+    <body>
+        <!-- En-tête -->
+        <header>
+            <nav>
+                <ul>
+                    <li><a href="accueil.html" class="ButtonMenu"><h2>MF</h2></a></li>
+                    <li><a href="accueil.html#profil">A propos</a></li>
+                    <li><a href="parcours.html">Parcours</a></li>
+                    <li><a href="competence.html">Compétences</a></li>
+                    <li><a href="accueil.html#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- Corps principal -->
+        <main>
+            <!-- accueil -->
+            <section id="accueil">
+                <h1>Matthias Francez</h1>
+                <h3>Etudiant en informatique</h3>
+            </section>
+
+            <!-- profil -->
+            <section id="profil">
+                <div>
+                    <figure>
+                        <img src="images/photoDeProfil.jpg" alt="photoDeProfil.jpg" title="photo de profil">
+                    </figure>
+                    <article>
+                        <ul>
+                            <li>Téléphone : <strong>06 49 93 64 00</strong></li>
+                            <li>Email : <a href="mailto:francezmatthias8@gmail.com" target="_blank">francezmatthias8@gmail.com</a></li>
+                            <li>Linkedin : <a href="https://www.linkedin.com/in/matthias-francez-66942a349" target="_blank">matthias-francez</a></li>
+                            <li>Github : <a href="https://github.com/LapinOmbrageux" target="_blank">Francez Matthias</a></li>
+                            <li>Mon <a href="documents/CV_mfrancez.pdf" download="CV_mfrancez" target="_blank">CV</a></li>
+                        </ul>
+                    </article>
+                </div>
+                <article>
+                    <p>
+                        Je suis actuellement étudiant en première année de <a href="https://iut-lannion.univ-rennes.fr/informatique" target="_blank">BUT informatique</a> à l’<a href="https://iut-lannion.univ-rennes.fr" target="_blank">IUT de Lannion</a>.
+                        En ce moment je recherche une alternance dans le développement logiciel, la cybersécurité ou le data IA, n'hésitez pas à me contacter <a href="accueil.html#contact">ici</a> ou par mail !
+                        J'ai eu l'opportunité d'être accepter par anticipation à la formation d'ingénieur par apprentissage à l'<a href="https://www.enssat.fr" target="_blank">ENSSAT</a> de Lannion.
+                        Je suis passionné de la musique, je pratique le saxophone depuis maintenant 8 ans.
+                    </p>
+                </article>
+            </section>
+
+            <!-- compétences clés -->
+            <section id="compKey">
+                <h2>compétences clé</h2>
+                <div>
+                    <article>
+                        <h3>compétences technique</h3>
+                        <p>
+                            <h4>Programmation :</h4>
+                            Python, C, Java, JavaFX, Scratch.
+                        </p>
+                        <p>
+                            <h4>Web :</h4>
+                            HTML, CSS.
+                        </p>
+                        <p>
+                            <h4>Base de données :</h4>
+                            PostgreSQL, MySQL, Tutorial D.
+                        </p>
+                        <p>
+                            <h4>Système :</h4>
+                            Linux.
+                        </p>
+                        <p>
+                            <h4>Environement de développement :</h4>
+                            VSCode, Geany, Thonny, Eclipse, SceneBuilder.
+                        </p>
+                        <p>
+                            <h4>Gestion de version :</h4>
+                            GitHub.
+                        </p>
+                        <p>
+                            <h4>Gestion de projet :</h4>
+                            Microsoft Teams, Project Libre.
+                        </p>
+                        <p>
+                            <h4>Production multimédia :</h4>
+                            GIMP, Shotcut, Figma, Canva, Pitch.
+                        </p>
+                    </p>
+                    </article>
+                    <div>
+                        <article>
+                            <h3>centres d'intérêt</h3>
+                            <p>
+                                <h4>Sports</h4> 
+                                Badminton (6 ans) 
+                                <br>
+                                Baby-Foot - compétition en interclub
+                            </p>
+                            <p>
+                                <h4>Musique</h4>
+                                Saxophone (8 ans - Alto & Ténor)
+                                <br>
+                                Big Band de jazz de Lannion
+                                <br>
+                                cycle 1 validé - cycle amateur en cours
+                                <br> 
+                                au <a href="https://www.conservatoire.lannion-tregor.com" target="_blank">Conservatoire de Lannion-Trégor</a>
+                            </p>
+                        </article>
+                        <article>
+                            <h3>langues</h3>
+                            <ul>
+                                <li><strong>Français</strong> : langue maternelle</li>
+                                <li><strong>Anglais</strong> : niveau B1 (certificat de cours)</li>
+                            </ul>
+                        </article>
+                    </div>
+                </div>
+            </section>
+            
+            <!-- contact -->
+            <section id="contact">
+                <h2>contactez moi</h2>
+                <form>
+                    <label for="name">vos nom & prénom</label><br>
+                    <input type="text" id="name"><br>
+                    <label for="email">votre email</label><br>
+                    <input type="text" id="email"><br>
+                    <label for="object">l'objet du message</label><br>
+                    <input type="text" id="object"><br>
+                    <label for="message">votre message</label><br>
+                    <input type="text" id="message"><br><br>
+                    <input type="submit" value="j'envoie">
+                </form>
+            </section>
+        </main>
+
+        <!-- Pied de page -->
+        <footer>
+            <article>
+                <h4>Matthias Francez</h4>
+                <ul>
+                    <li><a href="https://www.linkedin.com/in/matthias-francez-66942a349" target="_blank">mon profil linkedin</a></li>
+                    <li><a href="https://github.com/LapinOmbrageux" target="_blank">mon lien Github</a></li>
+                </ul>
+            </article>
+            <article>
+                <h4>liens rapides</h4>
+                <ul>
+                    <li><a href="accueil.html">accueil</a></li>
+                    <li><a href="accueil.html#profil">à propos</a></li>
+                    <li><a href="accueil.html#compKey">compétences clés</a></li>
+                    <li><a href="accueil.html#contact">contact</a></li>
+                    <li><a href="parcours.html">parcours</a></li>
+                    <li><a href="competence.html">compétences</a></li>
+                </ul>
+            </article>
+        </footer>
+    </body>
+</html>
