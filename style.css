@@ -5,6 +5,13 @@ body{
     font-family: "Quicksand-regular",Arial,sans-serif;
 }
 
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 a{
     font-family: "Quicksand-bold",Arial,sans-serif;
     text-decoration: none;
@@ -21,9 +28,13 @@ header{
     right: 0;
     position: fixed;
     background-image: linear-gradient(to bottom,rgba(255,255,255,1.0),rgba(255,255,255,0.5),rgba(255,255,255,0.0));
+    z-index: 1;
 }
 header ul{
+    display: flex;
+    flex-wrap: nowrap;
     align-items: center;
+    justify-content: stretch;
     list-style: none;
     margin: 0;
     padding: 0;
@@ -31,7 +42,6 @@ header ul{
 header ul li{
     display: inline-flex;
     margin: 20px 30px;
-    font-family: "Quicksand-bold",Arial,sans-serif;
     font-size: 24px;
 }
 header ul li a{
@@ -39,20 +49,17 @@ header ul li a{
     justify-content: center;
     align-items: center;
     text-decoration: none;
+    font-family: "Baloo",Arial,sans-serif;
     color: black;
     width: 200px;
     height: 60px;
-    background: linear-gradient(to right,#E0F0FF,#F8D9FF,#FFD0E0) padding-box,
+    background: linear-gradient(to right,#e9f4ff,#fae8fd,#ffe2ec) padding-box,
                 linear-gradient(to right,#E0F0FF,#F8D9FF,#FFD0E0) border-box;
     border-radius: 35px;
     border: 5px solid transparent;
 }
 header ul li a:hover{
     color: black;
-    background: linear-gradient(to right,#e9f4ff,#fae8fd,#ffe2ec) padding-box,
-                linear-gradient(to right,#E0F0FF,#F8D9FF,#FFD0E0) border-box;
-}
-header ul li a:active{
     background: linear-gradient(to right,#F1F8FF,#FDF3FF,#FFEEF4) padding-box,
                 linear-gradient(to right,#E0F0FF,#F8D9FF,#FFD0E0) border-box;
 }
@@ -64,18 +71,50 @@ header ul li a:active{
     align-items: center;
     align-self: left;
     text-decoration: none;
-    color: #b0b0b0;
-    background: linear-gradient(to right, #E0F0FF,#F8D9FF,#FFD0E0);
+    color: #757575;
+    background: linear-gradient(to right,#E0F0FF,#F8D9FF,#FFD0E0);
     border-radius: 40px;
     width: 90px;
     height: 90px;
     border: 5px solid #EBEBEB;
 }
-.ButtonMenu:active{
+.ButtonMenu:hover{
+    color: #757575;
     background: linear-gradient(to right, #deecfa,#fae4ff,#ffdfea);
 }
-.ButtonMenu:hover{
-    color: #8f8f8f;
+
+.timeline{
+    box-sizing: border-box;
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+    padding: 40px 60px;
+}
+.timeline:after {
+  content: "";
+  position: absolute;
+  top: 20px;
+  bottom: 20px;
+  left: 50%;
+  width: 8px;
+  background-image: linear-gradient(to top,#E0F0FF,#F8D9FF,#FFD0E0);
+  border-radius: 3px;
+}
+.timeline article.formation {
+    background: #E0F0FF;
+    margin: 50px;
+    width: 500px;
+    padding: 20px;
+    border-radius: 20px;
+}
+.timeline article.travail {
+    position: relative;
+    left: calc(50% + 50px);
+    background: #F8D9FF;
+    margin: 50px;
+    width: 500px;
+    padding: 20px;
+    border-radius: 20px;
 }
 
 h1,h2,h3,h4{
@@ -95,8 +134,11 @@ h3{
 }
 h4{
     font-family: "Quicksand-bold",Arial,sans-serif;
-    font-size: 20px;
+    font-size: 18px;
     text-align: left;
+}
+section[id^="comp"] h4{
+    text-align: center;
 }
 
 section{
@@ -105,7 +147,7 @@ section{
     align-items: center;
     flex-direction: column;
     width: 100%;
-    margin: 25% 0;
+    margin: 10% 0;
 }
 section#accueil{
     margin-top: 20%;
@@ -160,15 +202,19 @@ section#profil li img{
     width: 25px;
     margin: 5px;
 }
+section#keyComp{
+    display: flex;
+    flex-direction: column;
+}
 
-section#compKey div{
+section#keyComp div{
     display: flex;
     flex-direction: row;
 }
-section#compKey div div{
+section#keyComp div div{
     flex-direction: column;
 }
-section#compKey div article{
+section#keyComp div article{
     background-color: #F8D9FF;
     border-radius: 20px;
     padding: 20px;
@@ -176,13 +222,66 @@ section#compKey div article{
     box-shadow: #FAFAFA 10px 10px;
     text-align: justify;
 }
-section#compKey div div article{
+section#keyComp div div article{
     background-color: #FFD0E0;
     border-radius: 20px;
     padding: 20px;
     margin: 10px;
     box-shadow: #FAFAFA 10px 10px;
     text-align: justify;
+}
+section[id^="comp"]{
+    display: flex;
+    flex-direction: row;
+    width: 1200px;
+    margin: 50px;
+}
+section[id^="comp"] article{
+    width: 500px;
+    margin: 0 100px;
+    border-radius: 20px;
+    padding: 20px;
+}
+section#comp1{
+    margin-top: 20%;
+}
+section#comp1 article:first-child{
+    background-color: #B9DDFF;
+}
+section#comp1 article:last-child{
+    background-color: #E0F0FF;
+}
+section#comp2 article:first-child{
+    background-color: #F8D9FF;
+}
+section#comp2 article:last-child{
+    background-color: #F1B2FF;
+}
+section#comp3 article:first-child{
+    background-color: #FFA4C3;
+}
+section#comp3 article:last-child{
+    background-color: #FFD0E0;
+}
+section#comp4 article:first-child{
+    background-color: #ffb0a4;
+}
+section#comp4 article:last-child{
+    background-color: #ffd9d0;
+}
+section#comp5 article:first-child{
+    background-color: #fffad0;
+}
+section#comp5 article:last-child{
+    background-color: #fffca4;
+}
+section#comp6 article:first-child{
+    background-color: #bbffa4;
+    margin-bottom: 20%;
+}
+section#comp6 article:last-child{
+    background-color: #dbffd0;
+    margin-bottom: 20%;
 }
 
 form{
@@ -191,24 +290,37 @@ form{
     padding: 20px;
     margin: 10px;
     box-shadow: #FAFAFA 10px 10px;
-    text-align: justify;
+    text-align: center;
+}
+form label{
+    float: left;
 }
 form input[type="submit"]{
-    text-align: center;
-    color: #8f8f8f;
+    
+    color: #757575;
+    font-size: 2em;
     background: linear-gradient(to right, #E0F0FF,#F8D9FF,#FFD0E0);
     border-radius: 10px;
-    width: 200px;
-    height: 40px;
+    width: 250px;
+    height: 60px;
     border: 5px solid #FFFFFF;
     font-family: "Baloo",Arial,sans-serif;
 }
 form input[type="text"]{
+    background-color: #ecf6ff;
+    border: none;
     width: 500px;
-    margin: 0;
+    height: 2em;
+    margin-bottom: 1em;
+}
+form input[id="message"]{
+    height: 12em;
 }
 
 footer{
+    position: absolute;
+    left: 0;
+    right: 0;
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
@@ -216,20 +328,20 @@ footer{
     background: linear-gradient(to right,#E0F0FF,#F8D9FF,#FFD0E0) padding-box,
                 linear-gradient(to right,#B9DDFF,#ED9DFF,#FFA2C1) border-box;
     border-top: 5px solid transparent;
-    border-bottom: 5px solid transparent;
 }
 footer article{
     margin: 20px;
 }
 footer ul{
+    padding: 0;
     list-style: none;
+}
+footer li a{
+    margin: 10px;
+    color: black;
 }
 footer article:last-child ul{
     display: inline-flex;
-}
-footer a{
-    text-decoration: none;
-    color: black;
 }
 
 
