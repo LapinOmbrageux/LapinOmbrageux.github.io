@@ -136,6 +136,7 @@ h4{
     font-family: "Quicksand-bold",Arial,sans-serif;
     font-size: 18px;
     text-align: left;
+    margin: 10px;
 }
 section[id^="comp"] h4{
     text-align: center;
@@ -188,7 +189,7 @@ section#profil > article{
     width: 450px;
 }
 section#profil article p{
-    text-align: justify;
+    text-align: left;
     margin: 10px;
     padding: 10px;
     font-size: 22px;
@@ -238,7 +239,7 @@ section[id^="comp"]{
 }
 section[id^="comp"] article{
     width: 500px;
-    margin: 0 100px;
+    margin: 0 50px;
     border-radius: 20px;
     padding: 20px;
 }
@@ -333,17 +334,78 @@ footer article{
     margin: 20px;
 }
 footer ul{
-    padding: 0;
+    padding: 0 0 0 1em;
     list-style: none;
 }
 footer li a{
     margin: 10px;
     color: black;
 }
-footer article:last-child ul{
+footer li a:hover{
+    color: #555555;
+}
+footer article:nth-child(2) ul{
     display: inline-flex;
 }
+footer p{
+    position: absolute;
+    right: 15px;
+    bottom: 5px;
+}
 
+@media screen and (max-width: 1320px){
+    header ul li{
+        margin: 20px 30px;
+        font-size: 18px;
+    }
+    header ul li a{
+        width: 150px;
+        height: 45px;
+    }
+}
+
+@media screen and (max-width: 1080px){
+    header ul li{
+        margin: 20px 20px;
+        font-size: 16px;
+    }
+    header ul li a{
+        width: 120px;
+        height: 40px;
+    }
+    .ButtonMenu{
+        margin-right: 30px;
+        width: 60px;
+        height: 60px;
+    }
+    h1{
+        font-size: 6em;
+    }
+    h2{
+        font-size: 2em;
+    }
+    h3{
+        font-size: 2em;
+    }
+    h4{
+        font-size: 1em;
+    }
+    body{
+        font-size: 12px;
+    }
+    article{
+        padding: 10px;
+    }
+    section#profil article p{
+        font-size: 16px;
+    }
+    section#profil article{
+        padding: 10px;
+    }
+    section#profil figure{
+        width: 200px;
+    }
+}
 
 @font-face {
     font-family: "Quicksand-regular";
