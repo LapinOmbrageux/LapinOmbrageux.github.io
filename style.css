@@ -41,7 +41,7 @@ header ul{
 }
 header ul li{
     display: inline-flex;
-    margin: 20px 30px;
+    margin: 20px 20px;
     font-size: 24px;
 }
 header ul li a{
@@ -103,6 +103,7 @@ header ul li a:hover{
 .timeline article.formation {
     background: #E0F0FF;
     margin: 50px;
+    right: calc(50% + 50px);
     width: 500px;
     padding: 20px;
     border-radius: 20px;
@@ -231,58 +232,86 @@ section#keyComp div div article{
     box-shadow: #FAFAFA 10px 10px;
     text-align: justify;
 }
-section[id^="comp"]{
+section#keyComp div div article ul{
+    padding: 15px;
+}
+section[class^="comp"]{
     display: flex;
     flex-direction: row;
-    width: 1200px;
+    width: 100%;
     margin: 50px;
 }
-section[id^="comp"] article{
+section[class^="comp"] article{
     width: 500px;
     margin: 0 50px;
     border-radius: 20px;
     padding: 20px;
 }
-section#comp1{
+section.comp1{
     margin-top: 20%;
 }
-section#comp1 article:first-child{
+section.comp1 article:first-child{
     background-color: #B9DDFF;
 }
-section#comp1 article:last-child{
+section.comp1 article:last-child{
     background-color: #E0F0FF;
 }
-section#comp2 article:first-child{
+section.comp2 article:first-child{
     background-color: #F8D9FF;
 }
-section#comp2 article:last-child{
+section.comp2 article:last-child{
     background-color: #F1B2FF;
 }
-section#comp3 article:first-child{
+section.comp3 article:first-child{
     background-color: #FFA4C3;
 }
-section#comp3 article:last-child{
+section.comp3 article:last-child{
     background-color: #FFD0E0;
 }
-section#comp4 article:first-child{
+section.comp4 article:first-child{
     background-color: #ffb0a4;
 }
-section#comp4 article:last-child{
+section.comp4 article:last-child{
     background-color: #ffd9d0;
 }
-section#comp5 article:first-child{
+section.comp5 article:first-child{
     background-color: #fffad0;
 }
-section#comp5 article:last-child{
+section.comp5 article:last-child{
     background-color: #fffca4;
 }
-section#comp6 article:first-child{
+section.comp6 article:first-child{
     background-color: #bbffa4;
-    margin-bottom: 20%;
 }
-section#comp6 article:last-child{
+section.comp6 article:last-child{
     background-color: #dbffd0;
-    margin-bottom: 20%;
+}
+a article{
+    color: black;
+    font-family: "Quicksand-regular",Arial,sans-serif;
+}
+section[id^="projet"]{
+    width: auto;
+    border-radius: 20px;
+    padding: 20px;
+}
+section[id^="projet"].comp1{
+    background-color: rgba(224,240,255,0.5);
+}
+section[id^="projet"].comp2{
+    background-color: rgba(248,217,255,0.5);
+}
+section[id^="projet"].comp3{
+    background-color: rgba(255,208,224,0.5);
+}
+section[id^="projet"].comp4{
+    background-color: rgba(255,217,205,0.5);
+}
+section[id^="projet"].comp5{
+    background-color: rgba(255,250,208,0.5);
+}
+section[id^="projet"].comp6{
+    background-color: rgba(219,255,208,0.5);
 }
 
 form{
@@ -329,6 +358,7 @@ footer{
     background: linear-gradient(to right,#E0F0FF,#F8D9FF,#FFD0E0) padding-box,
                 linear-gradient(to right,#B9DDFF,#ED9DFF,#FFA2C1) border-box;
     border-top: 5px solid transparent;
+    margin-top: 100px;
 }
 footer article{
     margin: 20px;
@@ -353,7 +383,7 @@ footer p{
     bottom: 5px;
 }
 
-@media screen and (max-width: 1320px){
+@media screen and (max-width: 1440px){
     header ul li{
         margin: 20px 30px;
         font-size: 18px;
@@ -362,9 +392,25 @@ footer p{
         width: 150px;
         height: 45px;
     }
+    .timeline article.formation {
+        width: 350px;
+    }
+    .timeline article.travail {
+        left: calc(50% + 50px);
+        width: 350px;
+    }
+    section[id^="comp"]{
+        margin: 40px;
+    }
+    section[id^="comp"] article{
+        width: 400px;
+        margin: 0 40px;
+        border-radius: 20px;
+        padding: 20px;
+    }
 }
 
-@media screen and (max-width: 1080px){
+@media screen and (max-width: 1300px){
     header ul li{
         margin: 20px 20px;
         font-size: 16px;
@@ -378,11 +424,14 @@ footer p{
         width: 60px;
         height: 60px;
     }
+    .ButtonMenu h2{
+        font-size: 2em;
+    }
     h1{
         font-size: 6em;
     }
     h2{
-        font-size: 2em;
+        font-size: 3em;
     }
     h3{
         font-size: 2em;
@@ -404,6 +453,22 @@ footer p{
     }
     section#profil figure{
         width: 200px;
+    }
+    .timeline article.formation {
+        width: 200px;
+    }
+    .timeline article.travail {
+        left: calc(50% + 50px);
+        width: 200px;
+    }
+    section[id^="comp"]{
+        margin: 30px;
+    }
+    section[id^="comp"] article{
+        width: 350px;
+        margin: 0 30px;
+        border-radius: 20px;
+        padding: 10px;
     }
 }
 
