@@ -15,11 +15,11 @@ main{
 a{
     font-family: "Quicksand-bold",Arial,sans-serif;
     text-decoration: none;
-    color: #e366ff;
+    color: #890089;
 }
 a:hover{
     text-decoration: none;
-    color: #f1b1ff;
+    color: #bf2fbf;
 }
 
 header{
@@ -239,7 +239,7 @@ section[class^="comp"]{
     display: flex;
     flex-direction: row;
     width: 100%;
-    margin: 50px;
+    margin: 150px;
 }
 section[class^="comp"] article{
     width: 500px;
@@ -291,9 +291,14 @@ a article{
     font-family: "Quicksand-regular",Arial,sans-serif;
 }
 section[id^="projet"]{
+    display: flex;
+    flex-direction: column;
     width: auto;
     border-radius: 20px;
     padding: 20px;
+}
+section[id^="projet"] article{
+    margin: 20px;
 }
 section[id^="projet"].comp1{
     background-color: rgba(224,240,255,0.5);
